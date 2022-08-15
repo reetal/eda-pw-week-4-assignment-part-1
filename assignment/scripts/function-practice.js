@@ -6,13 +6,12 @@ console.log('***** Function Practice *****')
 
 // 1. Function to return 'Hello World!'
 function hello() {
-  console.log('Hello World!');
   return 'Hello World!';
 }
 // Call the function to test
 
 console.log('Test - should say "Hello World!"', hello());
-hello();
+
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
@@ -29,21 +28,26 @@ function addNumbers( firstNumber, secondNumber ) {
   // return firstNumber + secondNumber;
   return sum;
 }
-console.log(addNumbers(115,10));
+console.log(addNumbers(11,10));
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
+function multiplyThree(num1, num2, num3){
+  sum = num1 * num2 * num3;
+return sum;
 
 }
-
+console.log(multiplyThree(5,10,5));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    number = true; 
+    return number;
+  } else {
+    return false;
   }
-    return;
+    
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
@@ -62,8 +66,17 @@ function getLast( array ) {
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  
+  for(let i = 0; i < find.length; i++){
+    if (find[i] === value){
+      return true;
+    } else {
+      return false;
+    }
+
+  }
 }
+console.log('is the value found?', find(4,['apple', 'mango']));
+
 
 // ----------------------
 // Stretch Goals
@@ -71,6 +84,7 @@ function find( value, array ){
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
+  if ()
 
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
